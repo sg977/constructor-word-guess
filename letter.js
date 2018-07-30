@@ -22,4 +22,8 @@ var Letter = function(character) {
     };
 }
 
+//testing
+var letter1 = new Letter ("a");
+letter1.displayCharacter(); 
+
 module.exports = Letter; 
