@@ -1,4 +1,4 @@
-import { SSL_OP_NO_COMPRESSION } from "constants";
+//import { SSL_OP_NO_COMPRESSION } from "constants";
 
 //An array of new Letter objects representing the letters of the underlying word
 //A function that returns a string representing the word. This should call the function on each letter object (the first function defined in Letter.js)
@@ -20,7 +20,7 @@ var Word = function(myGuess) {
         console.log("Underscores " + numberUnderscoresNeeded);
         //create for loop that pushes the underscores to the this.underscores array in Word constructor 
         for(var i=0; i<numberUnderscoresNeeded; i++) {
-            this.underscores("_ ");
+            this.underscores.push("_ ");
         }
         //use the .join method to join each underscore that we pushed to the this.underscores array by a space
         console.log(this.underscores.join(" "));
@@ -29,7 +29,7 @@ var Word = function(myGuess) {
     this.generateLetters = function() {
         for (i=0; i<this.letters.length; i++){
             this.letters[i] = new Letter (this.letters[i]);
-            this.letters[i].showCharacter();
+            this.letters[i].displayCharacter();
         }
         
     }
@@ -37,9 +37,9 @@ var Word = function(myGuess) {
 }
 
 //testing
-var someWord = new Word ("Coco");
-someWord.splitWord();
-someWord.generateLetters(); 
+// var someWord = new Word ("Coco");
+// someWord.splitWord();
+// someWord.generateLetters(); 
 
 
 module.exports = Word; 

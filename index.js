@@ -237,7 +237,7 @@ function checkIfUserWon() {
 	if (guessesRemaining === 0) {
 		console.log(gameTextColor("====================================================================="));
 		console.log(incorrect('YOU LOST. BETTER LUCK NEXT TIME.'));
-		console.log(gameTextColor("The correct city was: " + randomWord));
+
 		//Increment loss counter by 1.
 		losses++;
 		//Display wins and losses totals.
