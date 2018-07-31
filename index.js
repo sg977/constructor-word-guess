@@ -251,7 +251,7 @@ function checkIfUserWon() {
 	//else if the number of slots/underscores that are filled in with a letter equals the number of letters in the word, the user won.
 	else if (slotsFilledIn === someWord.letters.length) {
 		console.log(gameTextColor("====================================================================="));
-		console.log(correct("YOU WON! YOU'RE A TRUE MINNESOTAN!"));
+		console.log(correct("YOU WON!"));
 		//Increment win counter by 1.
 		wins++;
 		//Show total wins and losses.
