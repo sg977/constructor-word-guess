@@ -188,6 +188,7 @@ function guessLetter(){
 		//We need to loop through all of the letters in the word, 
 		//and determine if the letter that the user guessed matches one of the letters in the word.
 		for (i=0; i < someWord.letters.length; i++) {
+			
 			//If the user guess equals one of the letters/characters in the word and letterGuessedCorrectly is equal to false for that letter...
 			if (guess.letter.toUpperCase() === someWord.letters[i].character && someWord.letters[i].letterGuessedCorrectly === false) {
 				//Set letterGuessedCorrectly property for that letter equal to true.

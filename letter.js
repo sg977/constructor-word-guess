@@ -11,6 +11,7 @@ var Letter = function(character) {
     //a string to store the underlying character for the letter
     this.character = character.toUpperCase();
     //a boolean value that stores whether that letter has been guessed yet
+    this.letterGuessedCorrectly = false;
     //a function that returns the underlying character if the letter has been guessed
     //or a placeholder (underscore) if the letter has not been guessed
     this.displayCharacter = function() {

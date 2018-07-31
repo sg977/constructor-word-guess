@@ -16,10 +16,10 @@ var Word = function(myGuess) {
         this.letters = this.myGuess.split("");
         //console.log(this.letters);
         //determine number of underscores needed based on length of this.letters arrray in the word constructor 
-        numberUnderscoresNeeded = this.letters.length;
+        //numberUnderscoresNeeded = this.letters.length;
         console.log("Underscores " + numberUnderscoresNeeded);
         //create for loop that pushes the underscores to the this.underscores array in Word constructor 
-        for(var i=0; i<numberUnderscoresNeeded; i++) {
+        for(var i=0; i<this.letters.length; i++) {
             this.underscores.push("_ ");
         }
         //use the .join method to join each underscore that we pushed to the this.underscores array by a space
